@@ -1,0 +1,94 @@
+:root {
+  --light-color: #f0f8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: gray;
+  min-height: 100vh;
+  min-width: 500px;
+  color: #fff;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  text-align: center;
+  padding: 3rem;
+  font-size: 45px;
+}
+#container {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 75vh;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  color: #000;
+}
+#input {
+  background-color: var(--light-color);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  width: 75%;
+}
+#input::placeholder {
+  color: #000;
+}
+#add-btn {
+  font-size: 1.2rem;
+  background-color: var(--light-color);
+  padding: 10px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.results {
+  margin-top: 1rem;
+  background-color: var(--light-color);
+  color: #000;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}
+.results ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.results ul li {
+  margin: 0.6rem;
+  padding: 0.5rem;
+  list-style: none;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  padding-top: 15px;
+}
+
+.results ul li span{
+    border: 1px solid #000;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.results ul li span:hover {
+  background-color: #00000017;
+  cursor: pointer;
+  border-radius: 1rem;
+}
